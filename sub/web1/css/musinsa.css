@@ -1,0 +1,210 @@
+@charset "utf-8";
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none    
+}
+a{
+    text-decoration: none;
+}
+body{
+    line-height: 1;
+    font-family: 'NanumSquare';
+}
+header{
+    width: 100%;
+    height: 85px;
+    background-color: black;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+header h1{    
+    margin: 0 130px;
+    position: relative;
+    left:50px;
+    top:3px;
+}
+header h1 img{
+    margin-left: 10px;
+    object-fit: cover;
+    width: 150px;
+    
+}
+
+header .MENU01{    
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-left: 60px;   
+}
+header .MENU01 > ul{
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;    
+}
+header .MENU01 > ul .categories01{
+    line-height: 85px;
+    width: 271px;
+}
+header .MENU01 > ul .categories01 > a{    
+    color:#fff;
+    text-align: center;
+}
+header .MENU01 > ul .categories01:hover .categories02{
+    display: block;
+}
+
+header .MENU01 > ul .categories01 .categories02{
+    display: none;   
+    position: relative;
+    z-index: 9;  
+    
+    
+}
+
+header .MENU01 > ul .categories01 .categories02 li{
+    width: 271px;
+    height: 83px;
+    background-color: #000;
+}
+
+header .MENU01 > ul .categories01 .categories02 li a{
+    line-height: 4;    
+        
+}
+header .MENU01 > ul .categories01:nth-of-type(1) .categories02 li a{
+    color: #a54a4a;
+}
+header .MENU01 > ul .categories01:nth-of-type(2) .categories02 li a{
+    color: #46689b;
+}
+header .MENU01 > ul .categories01:nth-of-type(3) .categories02 li a{
+    color: #4f9e49;
+}
+header .MENU01 > ul .categories01:nth-of-type(4) .categories02 li a{
+    color: #904daa;
+}
+header .MENU02{
+    display: flex;
+    justify-content: center;
+    line-height: 3;    
+    width: 100%;
+    height: 100%;    
+    padding: 20px 50px;
+   
+}
+header .MENU02 li{
+    margin-right: 15px;
+}
+header .MENU02 li a{
+    line-height: 1.5;
+    color: #777777;
+    font-size: 17px;
+    
+}
+
+.take01{
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    z-index: -9;
+}
+.take01 video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.title {
+    width: 100%;
+    height: 800px;    
+    background-color: #000;
+    margin: 0 auto;   
+    
+    
+}
+.title h2{
+    padding: 70px 0 30px;    
+    text-align: center;
+    color: #777777;
+}
+
+.title .cate01{
+       
+}
+
+.title .cate01 .img01{
+    
+    display: flex;
+    justify-content: center;
+}
+.title .cate01 .img01 li{
+    padding: 0 15px
+}
+.title .cate01 .img01 li a{}
+.title .cate01 .img01 li a img{
+    object-fit: cover;
+}
+
+.title .cate02{
+    margin-top: 7px;
+}
+.title .cate02 .img02{
+    display: flex;
+    justify-content: center;
+}
+.title .cate02 .img02 li{
+    padding: 14.5px;
+}
+.title .cate02 .img02 li a{}
+.title .cate02 .img02 li a img{
+    object-fit: cover;
+}
+
+
+.Brand{
+    width: 100%;
+    height: 1000px;
+    background-color: #000;
+    margin: 0 auto;
+}
+.Brand h2{
+    color: #ec3825;
+    text-align: center;
+    padding: 70px 0 30px;
+    font-weight: 800;
+}
+.Brand .rand{}
+.Brand .rand .and{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.Brand .rand .and .nd{
+    color: #fff;
+}
+.Brand .rand .and .nd a{}
+.Brand .rand .and .nd a img{}
+.Brand .rand .and .nd h3{
+    font-size: 20px;
+    margin-top: 21px;
+    font-weight: 800;
+}
+.Brand .rand .and .nd p:nth-of-type(1){
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.Brand .rand .and .nd strong{
+    display: block;
+    font-size: 15px;
+    font-weight: 800;
+    margin-top: 20px;    
+    
+}
