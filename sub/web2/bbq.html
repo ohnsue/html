@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBQ리뉴얼</title>
+    <!-- 연결파일 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- 1. xeicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- cdnjs.com  -->
+    <link href="css/BBQ리뉴얼.css" rel="stylesheet" />
+    <link href="css/font.css" rel="fontsheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+     
+    <!-- 3. jquery lib -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- 4. jquery ui lib -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- jquery js -->
+    <!-- cdnjs.com -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        
+        $(function(){
+            //header 
+            //scroll
+            var hdTop = $('header').offset().top;
+            $(window).scroll(function(){
+                console.log(hdTop);
+                //화면을 스크롤 했을 때 이벤트 실행에 대한 코드
+                var windowTop = $(window).scrollTop();
+                console.log(windowTop);
+                if(hdTop < windowTop) {
+                    //header보다 스크롤바의 값이 더 클때 실행
+                    $('header').addClass('on');
+                } else {
+                    $('header').removeClass('on');
+                }
+            });
+            //.main_visual            
+            var swiper = new Swiper(".main_v", {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 3500,// 2.5초
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,                  /* 페이저 넘김 */
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev", /* 좌우 화살표 */
+                },
+            });
+            /* .cont01 */            
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 2.5,
+                spaceBetween: 20,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev", /* 좌우 화살표 */
+                },
+            });
+    
+        })//jquery end
+    </script>    
+</head>
+<body>
+    <header>
+        <h1><a href="#">
+        <img src="img/logo_header_bbq.png" alt="로고이미지" /></a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">SEARCH</a></li>
+                <li><a href="#">BRAND</a></li>
+                <li><a href="#">EVENT</a></li>
+                <li><a href="#">FOUND</a></li>
+            </ul>
+        </nav>    
+    </header>
+    <section class="take01">       
+        <div class="BXY">
+        <h2>BBQ X YOO JUNG</h2>
+        </div>
+        <div class="MV">
+            <video controls autoplay muted loop >
+            <source src="img/2125130-15.mp4" type="video/mp4" />
+            </video>
+        </div>       
+    </section>
+    <section class="info">
+        <h1>ALL RIGHT HERE.</h1>
+        <p>FOR THE LOVE OF IT</p>
+        <div class="C_menu">
+            <div data-aos="fade-up" class="menu">
+                <a href="#">
+                    <img src="img/황올.png" alt="황금올리브 이미지" /></a>                    
+                    <h3>황금올리브치킨</h3>
+                    <p>Golden Olive Chicken</p>
+                    <div class="order">
+                        <ul>
+                        <li><a href="tel:1588-9282">1588-9282</a></li>
+                        <li><a href="#">주문하기</a></li>
+                        </ul>
+                    </div><!-- order end -->
+            </div><!-- .menu01 end -->
+            <div data-aos="fade-up" class="menu">
+                <a href="#">
+                    <img src="img/양념.png" alt="황금올리브양념 이미지" /></a>
+                    <h3>오리지널 양념치킨</h3>
+                    <p>Seasoned Spicy Chicken</p>
+                    <div class="order">
+                        <ul>
+                        <li><a href="tel:1588-9282">1588-9282</a></li>
+                        <li><a href="#">주문하기</a></li>
+                        </ul>
+                    </div><!-- order end -->
+            </div><!-- .menu02 end -->
+            <div data-aos="fade-up" class="menu">
+                <a href="#">
+                    <img src="img/왕갈비.png" alt="왕갈비치킨 이미지" /></a>
+                    <h3>극한왕갈비치킨</h3>
+                    <p>WangGalbi Chicken</p>
+                    <div class="order">
+                        <ul>
+                        <li><a href="tel:1588-9282">1588-9282</a></li>
+                        <li><a href="#">주문하기</a></li>
+                        </ul>
+                    </div><!-- order end -->
+            </div><!-- .menu03 end -->
+            <div data-aos="fade-up" class="menu">
+                <a href="#">
+                    <img src="img/핫크리스피.png" alt="황금올리브 핫크리스피 이미지" /></a>
+                    <h3>황금올리브 콤보 핫크리스피</h3>
+                    <p>Hot Crispy Chicken</p>
+                    <div class="order">
+                        <ul>
+                        <li><a href="tel:1588-9282">1588-9282</a></li>
+                        <li><a href="#">주문하기</a></li>
+                        </ul>
+                    </div><!-- order end -->
+            </div><!-- .menu04 end -->
+            <div data-aos="fade-up" class="menu">
+                <a href="#">
+                    <img src="img/레드착착.png" alt="레드착착 이미지" /></a>
+                    <h3>황금올리브콤보 레드착착</h3>
+                    <p>Red ChakChak Combo</p>
+                    <div class="order">
+                        <ul>
+                        <li><a href="tel:1588-9282">1588-9282</a></li>
+                        <li><a href="#">주문하기</a></li>
+                        </ul>
+                    </div><!-- order end -->
+            </div><!-- .menu05 end -->
+            <div data-aos="fade-up" class="menu">
+                <a href="#">
+                    <img src="img/블랙페퍼.png" alt="블랙페퍼 이미지" /></a>
+                    <h3>황금올리브콤보 블랙페퍼</h3>
+                    <p>Black Perper Chicken</p>
+                    <div class="order">
+                        <ul>
+                        <li><a href="tel:1588-9282">1588-9282</a></li>
+                        <li><a href="#">주문하기</a></li>
+                        </ul>
+                    </div><!-- order end -->
+            </div><!-- .menu06 end -->
+        </div>    
+    </section><!-- .info end -->
+    
+    <section class="New_C">
+        <h1>NEW CHICKEN.</h1>
+        <!-- Swiper -->
+        <div class="swiper main_v">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/Untitled-3.jpg" alt="뉴치킨이미지" /></a>                  
+                </div><!-- 1 -->
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/소이갈릭.jpg" alt="소이갈릭이미지" /></a>
+                </div><!-- 2 -->
+                <div class="swiper-slide">
+                    <a href="#"><img src="img/자메이카.jpg" alt="자메이카통다리이미지" /></a>
+                </div><!-- 3 -->      
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        
+    </section><!-- .New_C end -->   
+    <section class="Story">
+        
+        <h2>당신의 행복을 키우는 BBQ</h2>
+        <div class="BBQ_01">
+            <img src="img/bbqstory_happy.jpg" alt="올리브이미지" />
+            <p>BBQ는 더 풍부한 행복을 만들기 위해 고객의 입맛과 마음을 연구합니다.<br>BBQ가 있는 곳 어디서나 행복한 만남이 이루어집니다.<br>사회 윤리적 기업으로 책임과 역할을 다하여 모두가 행복해지는 세상을 만들어가겠습니다.</p>
+        </div><!-- 01 end -->
+    
+        <div class="box">
+            <div class="BBQ_02">
+                <h2>Best of the Best Quality</h2>
+                <p>BBQ는 그 이름처럼<br>최고의 원재료만을 사용하여 맛은 물론<br>고객의 건강까지 생각합니다</p>
+                <img src="img/bbqstory_qua_bg.jpg" alt="재료이미지" />
+            <div class="olive">
+                <h3>세상에서 가장 맛있는 치킨</h3>
+                <p>BBQ는 최고의 치킨 맛,<br>건강에 좋은 치킨을 만들겠다는 일념으로 올리브유 중에서도 최고급유이자<br>'신이 내린 선물'이라 불리는 100%엑스트라 버진 올리브유를<br>후라잉오일의 원료로 사용하고 있으며 국민건강 증진에 기여하고자 합니다.</p>
+            </div>
+
+            </div><!-- 02 end -->
+        </div>
+        
+    </section>
+
+    <footer>
+        <div class="foot">
+            
+           <div class="box02"> 
+            <p>주식회사 제너시스비비큐</p>    
+            <div class="list">
+                <ul>
+                    <li>주문번호 : 1588-9282</li>
+                    <li>고객센터 : 1588-9282</li>
+                    <li>창업문의 : 080-383-9000</li>
+                </ul>
+            </div><!-- .list01 end -->
+            <div class="list">
+                <ul>
+                    <li>대표자 : 이승재</li>
+                    <li>서울시 송파구 중대로 64(문정동)</li>
+                    <li>통신판매업신고 : 2017-서울송파-0087 </li>
+                    <li>사업자등록번호 : 207-81-43555</li>
+                </ul>
+            </div><!-- .list02 end -->
+            <span>© 2019 GENESIS BBQ. All rights reserved.</span>
+            </div>
+        <div class="sns">
+            <a href="#">
+                <img src="img/instar.png" alt="인스타이미지" />
+            </a>
+            <a href="#">
+                <img src="img/youtube.png" alt="유튜브이미지" />
+            </a>
+            <a href="#">
+                <img src="img/blog.png" alt="블로그이미지" />
+            </a>
+        </div><!-- .sns end  -->
+        </div><!-- .foot end -->
+    </footer>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
